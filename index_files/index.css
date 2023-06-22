@@ -1,0 +1,80 @@
+@import url('http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('http://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.tab-btn a img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tab-inner {
+  width: 700px;
+  margin: 50px auto;
+
+}
+.tab-btn {}
+.tab-btn a {
+  background-color: #ffffff;
+  color: #000;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  margin-right: -1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-top: 3px solid #fff;
+  transition: 0.5s;
+}
+.tab-btn a.active {
+  border-top: 3px solid rgb(180, 8, 8);
+  box-sizing: border-box;
+  color: rgb(180, 8, 8);
+  background-color: #edd;
+}
+.tab-content {
+  position: relative;
+}
+.tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  transition: 0.5s;
+  padding: 25px;
+}
+.tab div {}
+.tab h2 {
+  text-transform: uppercase;
+}
+.tab p {}
+.tab img {
+  width: 100%;
+}
+.tab:target {
+  opacity: 1;
+  visibility: visible;
+}
+.tab:nth-child(1) {
+  opacity: 1;
+  visibility: visible;
+}

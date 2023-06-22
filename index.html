@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>target 가상클래스 html+css 탭메뉴 콘텐츠</title>
+  <link rel="stylesheet" href="./index_files/index.css">
+  <script src="./index_files/jquery-3.7.0.min.js.다운로드"></script>
+  <script src="./index_files/index.js.다운로드"></script>
+</head>
+
+<body>
+
+  <div class="tab-inner">
+    <div class="tab-btn">
+      <a href="http://127.0.0.1:5500/index.html#tab1" class="active"><img src="./index_files/pngegg.png" alt="audi">Audi</a>
+      <a href="http://127.0.0.1:5500/index.html#tab2"><img src="./index_files/benz.png" alt="benz">Benz</a>
+      <a href="http://127.0.0.1:5500/index.html#tab3"><img src="./index_files/bmw.png" alt="BMW">BMW</a>
+      <a href="http://127.0.0.1:5500/index.html#tab4"><img src="./index_files/tesla.png" alt="Tesla">Tesla</a>
+    </div>
+    <div class="tab-content">
+      <div id="tab1" class="tab">
+        <h2>AUDI</h2>
+        <p>
+          The Audi e-tron GT quattro offers sporty, luxurious and comfortable experience. The sports seat plus in the front seat incorporates a head restraint, which provides strong support for cornering and sporty driving.
+        </p>
+        <img src="./index_files/audi.jpg" alt="Audi">
+      </div>
+      <div id="tab2" class="tab">
+        <h2>BENZ</h2>
+        <p>
+          The all-electric EQE, a new symbol of the era of electric mobilityThe one-bow design of the coupe shoulder line, which extends seamlessly from the front to the rear of the vehicle, further highlights the characteristics of the EQ line, such as the Mercedes-Benz front stereoscopic pattern.
+        </p>
+        <img src="./index_files/benz.jpg" alt="Benz">
+      </div>
+      <div id="tab3" class="tab">
+        <h2>BMW</h2>
+        <p>
+          Fifty-one years ago, BMW's race to the joy of unlimited driving began with the introduction of the BMW 1602e. BMW's passion for sustainable mobility continues from BMW's first electric vehicle E1 to Korea's first imported pure electric vehicle mass-production model i3. BMW has completed its know-how in e-mobility as well as driving capabilities through the continuous development of BMW eDrive technology and sub-brand BMW i.
+        </p>
+        <img src="./index_files/bmw.jpg" alt="BMW">
+      </div>
+      <div id="tab4" class="tab">
+        <h2>Tesla</h2>
+        <p>
+          The functions currently available require the driver's active attention and are held accountable to the driver. The vehicle is not currently driving autonomously. In order for these features to be commercialized, billions of miles of driving tests must be used to demonstrate that the vehicle's autonomous driving ability is significantly ahead of the driver's driving ability, and regulatory approval may take longer in some jurisdictions.
+        </p>
+        <img src="./index_files/tesla.jpg" alt="Tesla">
+      </div>
+    </div>
+  </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
